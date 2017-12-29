@@ -1,0 +1,137 @@
+.pc-wrapper{
+  width: 100%;
+  margin: 0 auto;
+  .part-1, .part-2, .part-3{
+    width: 100%;
+    position: relative;
+    img{
+      width: 100%;
+      display: block;
+    }
+    .op{
+      visibility: hidden;
+    }
+    video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .part-1{
+    position: relative;
+    .buy-1{
+      position: absolute;
+      left: 506 / 1080 * 100%;
+      width: 341 / 1080 * 100%;
+      top: 1215 / 4903 * 100%;
+      height: 83 / 4903 * 100%;
+      cursor: pointer;
+    }
+    .buy-2{
+      position: absolute;
+      left: 222 / 1080 * 100%;
+      width: 245 / 1080 * 100%;
+      top: 2571 / 4903 * 100%;
+      height: 87 / 4903 * 100%;
+      cursor: pointer;
+    }
+    .buy-3{
+      position: absolute;
+      left: 49 / 1080 * 100%;
+      width: 341 / 1080 * 100%;
+      top: 4115 / 4903 * 100%;
+      height: 84 / 4903 * 100%;
+      cursor: pointer;
+    }
+  }
+  .part-3{
+    position: relative;
+    .action-ajax-click{
+      position: absolute;
+      left: 368 / 1080 * 100%;
+      width: 346 / 1080 * 100%;
+      top: 322 / 1462 * 100%;
+      height: 83 / 1462 * 100%;
+      cursor: pointer;
+    }
+    .action-rule-click{
+      position: absolute;
+      left: 487 / 1080 * 100%;
+      width: 215 / 1080 * 100%;
+      top: 83 / 1462 * 100%;
+      height: 54 / 1462 * 100%;
+      cursor: pointer;
+    }
+    .action-call{
+      position: absolute;
+      left: 368 / 1080 * 100%;
+      width: 346 / 1080 * 100%;
+      top: 1288 / 1462 * 100%;
+      height: 86 / 1462 * 100%;
+      cursor: pointer;
+    }
+  }
+}
+.rule-float{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: .85);
+  .float-wrapper{
+    position: absolute;
+    height: 80%;
+    top: 10%;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+
+    color: #fff;
+    line-height: 1.8;
+    .icon-close{
+      position: absolute;
+      bottom: 100%;
+      left: 100%;
+    }
+  }
+}
+.icon-close{
+  cursor: pointer;
+  position: relative;
+  border: 1px solid #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  transform: rotate(45deg);
+  &::after, &::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 1px;
+    background: #fff;
+  }
+  &::after{
+    width: 80%;
+  }
+  &::before{
+    height: 80%;
+  }
+}
+.swiper-container{
+  overflow: hidden;
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+  padding-right: 200px;
+  .swiper-wrapper{
+    width: 100%;
+    
+  }
+}

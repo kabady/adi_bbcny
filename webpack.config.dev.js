@@ -5,7 +5,8 @@ var path = require('path')
 module.exports = {
     entry: {
         // index: './front-src/entry/index.ts',
-        index: path.resolve(__dirname + '/./front-src/entry/index.test.ts'),
+        index_m: path.resolve(__dirname + '/./front-src/entry/index_m/index.ts'),
+        index_pc: path.resolve(__dirname + '/./front-src/entry/index_pc/index.ts'),
     },
     output: {
         path: path.resolve(__dirname + '/./dest/deploy/'), // 输出文件的保存路径
